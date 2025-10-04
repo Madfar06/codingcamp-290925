@@ -1,0 +1,118 @@
+.body {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.todo-container {
+    background-color: #2c2c4d;
+    border-radius: 15px;
+    padding: 15px;
+    width: 40vw;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: min-content;
+    margin: auto;               
+}
+
+h1 {
+    text-align: center;
+    color: #9f8cff;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.input-section input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b64;
+    color: #ffffff;
+    flex: 1;
+}
+
+#taskInput {
+    flex: 2;
+}
+
+.input-section button,
+.controls-section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: bacground-color 0.3s;
+}
+
+#addButton {
+    background-color: #5252e9;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#addButton:hover {
+    background-color: #2f2fae;
+    cursor: pointer;
+}
+
+.controls-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filterButton {
+    background-color: #5d5d81;
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: small;
+}
+
+#deleteAllButton {
+    background-color: #5252e9;
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: small;
+}
+
+#filterButton:hover,
+#deleteAllButton:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.list-display table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #cccccc;
+    background-color: #1a1a2e;
+    padding: 30px;
+}
+
+.list-display th {
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 0.9em;
+    color: #9f8cff;
+}
+
+.no-tasks {
+    text-align: center;
+    padding: 20px 0;
+    font-style: italic;
+    color: #888888;
+}

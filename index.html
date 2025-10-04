@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman login</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="todo-container">
+            <h1>Todo List</h1>
+
+            <div class="todo-input">
+                <div class="input1">
+                    <input type="text" id="taskInput" placeholder="Add a todo...">
+                    <input type="text" id="dateInput" placeholder="mm/dd/yyyy">
+                </div>
+                <button id="addButton">+</button>
+            </div>
+            <div class="input-section"> 
+                <button id="filterButton">FILTER</button>
+                <button id="deleteAllButton">DELETE ALL</button>
+            </div>
+            <div class="list-display">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TASK</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todoList">
+                        <tr>
+                            <td colspan="4" class="no-tasks">No task found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
